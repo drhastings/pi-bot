@@ -6,10 +6,10 @@ void initBattery()
   ADCSRA |= 1<<ADEN | 1<<ADIE | 1<<ADPS2 | 1<<ADPS1;
 }
 
-uint16_t readBattery()
+int16_t readBattery()
 {
   startConversion();
-  return adc;
+  return ((((float) adc) * (5450/512.0)) - 6000) / 24;
 }
 
 ISR (ADC_vect)

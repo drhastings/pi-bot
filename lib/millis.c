@@ -1,5 +1,5 @@
-#include "../include/millis.h"
-#include "../include/encoders.h"
+#include <millis.h>
+#include <encoders.h>
 
 void initMillis()
 {
@@ -12,7 +12,6 @@ void initMillis()
 
 uint32_t millis()
 {
-	processMotors = 1;
 	return ms;
 }
 

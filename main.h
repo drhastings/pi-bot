@@ -9,6 +9,7 @@
 #include <motors.h>
 #include <uart.h>
 #include <wheel.h>
+#include <battery.h>
 #include <I2Cdev.h>
 #include <helper_3dmath.h>
 #include <mpu6050.h>

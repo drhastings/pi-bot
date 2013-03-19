@@ -11,6 +11,6 @@ volatile uint16_t adc;
 
 void initBattery();
 
-uint16_t readBattery();
+int16_t readBattery();
 
 #endif

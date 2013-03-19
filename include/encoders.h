@@ -13,6 +13,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <inttypes.h>
+#include <util/atomic.h>
 
 typedef struct 
 {
@@ -26,5 +27,8 @@ void initEncoders();
 
 int32_t getLeftCount();
 int32_t getRightCount();
+
+void processLeft();
+void processRight();
 
 #endif

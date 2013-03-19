@@ -317,12 +317,6 @@ uint8_t dmpInitialize() {
     int8_t xgOffset = getXGyroOffset();
     int8_t ygOffset = getYGyroOffset();
     int8_t zgOffset = getZGyroOffset();
-		sendInt(xgOffset);
-		send(", ",2);
-		sendInt(ygOffset);
-		send(", ",2);
-		sendInt(zgOffset);
-		sendLn();
     DEBUG_PRINT(F("X gyro offset = "));
     DEBUG_PRINTLN(xgOffset);
     DEBUG_PRINT(F("Y gyro offset = "));
